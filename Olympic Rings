@@ -1,0 +1,55 @@
+function setup() {
+  createCanvas(400, 400);
+  
+  
+}
+
+
+function draw() {
+  background(100,100,100);
+  strokeWeight(5);
+  noFill();
+
+  //blue ring
+  stroke(39, 13, 212);
+  ellipse(100, 200, 50, 50);
+
+  //yellow
+  stroke(212, 172, 13);
+  ellipse(130, 230, 50, 50);
+
+  //black ring
+  stroke(0, 0, 0);
+  ellipse(160, 200, 50, 50);
+
+  //green ring
+  stroke(91, 188, 27);
+  ellipse(190, 230, 50, 50);
+
+  //red ring
+  stroke(216, 16, 22);
+  ellipse(220, 200, 50, 50);
+  
+  
+  //Overlapping sections
+  
+  
+  //Blue ring
+  stroke(39, 13, 212);
+  arc(100,200,50,50,0,20);
+  
+  //Yellow ring
+  stroke(212, 172, 13);
+  arc(130,230,50,50,300,100);
+  
+  //Back ring
+  stroke(0, 0, 0);
+  arc(160,200,50,50,0,20);
+  
+  //Blue ring
+  stroke(91, 188, 27);
+  arc(190,230,50,50,300,100);
+  
+  
+
+}
